@@ -1,113 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/SaaSto/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
-    <script type="module" crossorigin src="/SaaSto/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/SaaSto/assets/styles-DvPDDfy5.css">
-  </head>
-  <body>
-    <header class="header">
-  <div class="container">
-    <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="/SaaSto/assets/sprite-E8vg0sBb.svg#logo"></use>
-        </svg>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/SaaSto/favicon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Inter:regular,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:regular,500,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:regular&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+    integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>SaaSto</title>
+  <script type="module" crossorigin src="/SaaSto/index.js"></script>
+  <link rel="stylesheet" crossorigin href="/SaaSto/assets/index-D9AynIn0.css">
+</head>
+
+<body>
+  <header class="header">
+  <div class="header_container container">
+    <nav class="header_nav">
+      <a class="header_nav_logo" href="./index.html" aria-label="Site logo">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALMAAAAoCAMAAACCaztBAAAAflBMVEUAAAAYBTsYBjwYBjwYBDwYBTj4hWD6hl8QAEAXBTwVBDr6hV8YBTz/gGAYBToXBTz6hV8XBzv6hl/6hV8WAz36hl/4hl4QEEAXBjz6hl8YBT4XBjwYBjz6hl/5hl4XBTz7hGD6hV76h174g2D3hWAXBTwXBjz6hV8YBjz6hl+o8YwYAAAAKHRSTlMAn4DfQCAg3xDvMIC/EGCQv3CvYFCfcBDvz1+vf++gb1CQb0Awz8/PJjl1lwAABIpJREFUWMPNmNl6ozAMhW2w2UlYkyEbJE2nw/u/4CTeJGw3Xydzw7kpqMH+LSRLhkiVtyaePfpq2pKsU7f4OnnZyukS52SFiqomevHfy1dE1qbo6cky/zrPWue+jZDb83h10MMD+QbAczwRS1VF1qW8J6SfQbnMyb6q+lb5N5p3ZE0q44jkCLl9MjawAKHq7MvQpBuDYMP+E4BvxmDsOPkHtT2JEPJOBDi+f2rncTQr/kiFlL8NnJxCNcrvg7aN4UNb8kLNRC6A2D8s+H6WDm7nhlja/gGF2bs+DtEohVp68LyhLzOwJMitH8I0I0XSz7GDjPUrex8Z9Dv5IfNMSuRVYcIVMSbK82ShjZzlsyiUp99ipuLZtCgUe/BTZhzOlQwXxDzJVdjMhQDl4CuGvMeY7Xa/nYsn6f5xWcvXlQCz8yxLXjG3dgrms80spjigmXXOZDQVyzklcu5AT7pVdg5MneCEIBYrx+Gis32bqjTlHuZB2qplTt5mzAycmZqOPqTYTpCXHDOPKF8N8wZFVUKf8jEnKHXCg8t81nUG4rnp49lhTsQIHbF1wnl5BGbLrpkhHkCY2ZOnJ2CGfUMqau3WlCyUqni2M9NR4LFrZiavvmeGe1DtMPfw8P0af89M1czMs3WFY5Z1R8yM7BQxJ6l64XjtjImfFOwh84bCkXOmHuXADI72Y1t5nJoiyCw30724qYHZZ6fmWhCOAtutKVwm3x6Nf3SY7bbz4wLMWJmAhtoNGyBMLZiNfb+wU7iG2u0ybxYxGMgE0MwA3To9PzAjcYozw94AzZsPvHZgCnEH4DLrfMWPdoYZ1N8tvHsMzJh6/FxAZ+IKtgG9b3DLThccjIbQATjMYga2LGUBMCN9tdHS1WdgtvpIMYocl4l5rZYk0GvxxaupGQo7dOpgauoALHeLmbGqG/b2hJj9MVK8wwzqJHXtZeY+Zr/iK3i7cpmBTbHyl7HBwQ5M9kZEbeZQBvDr2DgPA/a2TsidxcwYNC1M+1H83SyrQ6CdVYNdM3ExCl750ZuDwesczEs4puDDVeTrNzYWc2FiEup14NhHs9fV+MX4mWtT3mHIBJihjbuDQZuIr3YXaLZPw6BmO0BNkfajnJmlVu2u8VuxmRMYEtV6zDyo7x2LYPEyb+Xj3LRdNa7FmSi0itlvp2CvE3O45MS0TgcZNlv1qLd2QyBc54UiYHZrd6p3KQ612O2ROmzx1O4wRUaS4B4pCZ0B4WwFzJWX+XULx/Q2BkqpYbbsgEfBjGo09fei4IMYnWGvcLSyDoTlQCxlbtUFOOjtA9ueSjt1F1nojiT51Mw2dFrrbwVX/9EK+35qiCNdA4tg75SY9GEDZo+davtWAqYFWwwtosWaKNQT7a4ksjrRy+ycti4t8SljLNtbtj3ruox49J19/xiFWzZnTLZhfPHt62p1ouaQcs5LtZWs68v5rtGeBWhyn2553n5o0svavptXOT609hFxlA9kZRLfzKPrYDIxF/5d9TdzEg39C6ioqdaH/NAu7qfSCzw18bq+lyO1zeDtoZvbunaMp/4CUbtZO9eYYhUAAAAASUVORK5CYII=" alt="Logo image">
       </a>
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+      <button class="header_burger" type="button">
+        <svg class='header_burger_svg' width='30' height='30'>
+          <use href='/SaaSto/assets/icons-hx764l8s.svg#icon-menu-burger'>
+          </use>
+        </svg>
+      </button>
+      <ul class="header_nav_list">
+        <li class="header_nav_item">
+          <a class="header_nav_link p18" href="#">Demos</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+        <li class="header_nav_item">
+          <a class="header_nav_link p18" href="#">Features</a>
+        </li>
+        <li class="header_nav_item">
+          <a class="header_nav_link p18" href="#">Pricing</a>
+        </li>
+        <li class="header_nav_item">
+          <a class="header_nav_link p18" href="#">Contact</a>
+        </li>
+      </ul>
+      <ul class="header_nav_btn_list">
+        <li class="header_nav_btn_item">
+          <button class="header_btn_login p18fw5" type="button">Login</button>
+        </li>
+        <li class="header_nav_btn_item">
+          <button class="header_btn_singUp p18fw5" type="button">Sign up</button>
         </li>
       </ul>
     </nav>
   </div>
 </header>
 
+  <main>
+    <!-- Loads the specified .html file -->
+    <section class="hero">
+  <div class="hero_container container">
+    <div class="hero_content">
+      <h1 class="hero_title H1">A collaborative Time Tracking that you Need</h1>
+      <p class="hero_subtitle p18">An enim nullam tempor sapien gravida donec enim ipsum porta justo congue magna at
+        pretium
+        purus pretium ligula</p>
 
-    <main>
-      <!-- Loads the specified .html file -->
-      <section class="vite-promo">
-  <div class="container">
-    <div class="vite-promo-thumb">
-      <a
-        class="vite-promo-link"
-        href="https://vitejs.dev/"
-        target="_blank"
-        rel="noopener noreferrer"
-        aria-label="Link to Vite official website"
-        title="Vite.js  build tool"
-      >
-        <!-- Path to images as from index.html file -->
-        <img
-          class="pic"
-          src="/SaaSto/assets/vite-logo-9o_aqrTe.png"
-          alt="Vite logo"
-          width="640"
-          height="640"
-        />
-      </a>
-    </div>
-    <h1 class="main-title">
-      <span class="main-title-gradient">Vite</span>
-      Template by
-      <a
-        class="main-title-link"
-        href="https://github.com/goitacademy/vanilla-app-template"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        GoIT
-      </a>
-    </h1>
+    </div> <button class="hero_btn" type="button">Start 14 Days Trial</button>
   </div>
 </section>
+  </main>
 
-      <article class="badges">
-  <div class="container">
-    <ul class="badges-list">
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-html-inject"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          HTML Inject
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/vite-plugin-full-reload"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Full Reload
-        </a>
-      </li>
-      <li class="badges-item">
-        <a
-          class="badges-link"
-          href="https://www.npmjs.com/package/postcss-sort-media-queries"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Sort Media Queries
-        </a>
-      </li>
-    </ul>
-  </div>
-</article>
-
-    </main>
-
-    <footer class="footer">
+  <footer class="footer">
   <div class="container">
     <p class="footer-desc">
       Made with ✨ by
@@ -124,5 +88,6 @@
 </footer>
 
 
-  </body>
+</body>
+
 </html>
