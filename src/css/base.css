@@ -18,6 +18,9 @@
   --onyx: #38363c;
   --emerald: #5bc17f;
   --floralWhite: #fff8f2;
+  --skyBlue: #70d0dc;
+  --mSlateBlue: #7562e0;
+  --coral: #fa865f;
 }
 
 html {
@@ -28,10 +31,10 @@ html {
 
 body {
   font-family: var(--font-family);
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   min-width: 100vw;
-  min-height: 100vh;
+  min-height: 100vh; */
   margin: 0;
 
   font-size: 16px;
@@ -99,4 +102,23 @@ main {
   .p18 {
     font-size: 16px;
   }
+}
+
+.visually-hidden {
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  color: #2e2f42;
+
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
