@@ -1,0 +1,104 @@
+.hero {
+  background-color: var(--floralWhite);
+  background-image: url(/img/hero/hero_desktop_bg.png);
+  background-repeat: no-repeat;
+  background-position-y: top;
+  background-position-x: center;
+  background-size: 1994px 1280px;
+}
+
+.hero_container {
+  padding: 320px 24px 386px 24px;
+}
+
+.hero_content {
+  max-width: 800px;
+  margin: 0 auto 68px;
+}
+
+.hero_title {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.H1 {}
+
+.hero_subtitle {
+  text-align: center;
+  line-height: 180%;
+  text-align: center;
+  color: var(--temptress);
+  opacity: 0.8;
+}
+
+.hero_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  border-radius: 40px;
+  border: none;
+  width: 240px;
+  height: 76px;
+  background-color: var(--ogreOdor);
+
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 156%;
+  color: #fff;
+}
+
+@media screen and (max-width:1440px) {}
+
+@media screen and (max-width:1024px) {
+  .hero_container {
+    padding: 120px 24px 120px 24px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .hero {
+    background-image: url(/img/hero/mob_elements.png), url(/img/hero/alarm_clock.png);
+    background-repeat: no-repeat;
+    background-position: 70% top;
+    background-size: auto;
+  }
+
+  .hero_container {
+    padding: 75px 24px 85px 24px;
+  }
+
+  .hero_content {
+    max-width: 440px;
+    margin: 0 auto 40px;
+  }
+
+  .hero_title {
+    line-height: 160%;
+    text-transform: capitalize;
+    margin-bottom: 12px;
+  }
+
+  .hero_subtitle {
+    line-height: 225%;
+  }
+}
+
+@media screen and (max-width:425px) {
+  .hero_title {
+    text-align: left;
+    max-width: 297px;
+  }
+
+  .hero_subtitle {
+    text-align: left;
+    max-width: 307px;
+  }
+
+  .hero_btn {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width:375px) {}
