@@ -1,0 +1,79 @@
+.funfact {
+  background-color: transparent;
+  background-image: url(/img/funFact/funny_bg.png);
+  background-repeat: no-repeat;
+  background-position: top;
+  margin-top: -204px;
+}
+
+.funfact_container {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.funfact_list {
+  display: flex;
+  flex-direction: row;
+  gap: 180px;
+  align-items: center;
+  justify-content: center;
+  margin-right: 260px;
+}
+
+.funfact_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.funfact_counter {
+  font-family: var(--font-family);
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 133%;
+  color: var(--cetaceanBlue);
+}
+
+.funfact_counter_desc {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  color: var(--blackOlive);
+  opacity: 0.6;
+}
+
+@media screen and (max-width:1024px) {
+  .funfact_list {
+    margin-right: 0;
+    gap: 160px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .funfact {
+    margin: 0;
+  }
+
+  .funfact_container {
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
+
+  .funfact_list {
+    flex-direction: column;
+    gap: 96px;
+  }
+
+  .funfact_item {
+    gap: 24px;
+  }
+
+  .funfact_counter {
+    font-size: 64px;
+    line-height: 100%;
+  }
+
+}

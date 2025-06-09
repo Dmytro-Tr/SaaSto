@@ -37,8 +37,8 @@ body {
   font-size: 16px;
   font-weight: 400;
 
-  color: #404040;
-  background-color: #ffffff;
+  color: var(--blackOlive);
+  background-color: var(--white);
 }
 
 main {
