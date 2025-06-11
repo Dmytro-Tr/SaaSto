@@ -19,6 +19,9 @@
 .hero_title {
   text-align: center;
   margin-bottom: 24px;
+  background-image: url(../img/hero/shape.png);
+  background-repeat: no-repeat;
+  background-position: 2% bottom;
 }
 
 .H1 {}
@@ -78,6 +81,7 @@
     line-height: 160%;
     text-transform: capitalize;
     margin-bottom: 12px;
+    background-image: none;
   }
 
   .hero_subtitle {

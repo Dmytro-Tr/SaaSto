@@ -31,10 +31,6 @@ html {
 
 body {
   font-family: var(--font-family);
-  /* display: flex;
-  flex-direction: column;
-  min-width: 100vw;
-  min-height: 100vh; */
   margin: 0;
 
   font-size: 16px;

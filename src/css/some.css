@@ -1,7 +1,8 @@
 .some {
   background-color: transparent;
-  margin-top: 165px;
-  margin-bottom: 77px;
+  padding-top: 165px;
+  padding-bottom: 77px;
+  background: url(/img/some/Vector.png) 5% 10% no-repeat, url(/img/some/3d_rocket.png) 90% 27% no-repeat;
 }
 
 .some_container {}
@@ -19,9 +20,7 @@
   line-height: 146%;
   text-transform: capitalize;
   color: var(--cetaceanBlue);
-  background-image: url(../img/some/Shape.png);
-  background-repeat: no-repeat;
-  background-position: 63.5% 90%;
+  background: url(/img/some/Shape.png) 63.5% 90% no-repeat;
   text-align: center;
 }
 
@@ -101,15 +100,20 @@
 /* @media screen and (max-width:1440px) {} */
 
 @media screen and (max-width:1024px) {
+  .some {
+    background: url(/img/some/3d_rocket.png) -3% 0% / 25% no-repeat;
+  }
+
   .some_title {
-    background-image: none;
+    background: url(/img/some/shape_mobile.png) 67% 100% no-repeat;
   }
 }
 
 @media screen and (max-width:768px) {
   .some {
-    margin-top: 6px;
-    margin-bottom: 60px;
+    padding-top: 106px;
+    padding-bottom: 60px;
+    margin-top: -100px;
   }
 
   .some_header {
@@ -147,6 +151,12 @@
   }
 }
 
-/* @media screen and (max-width:425px) {} */
+@media screen and (max-width:425px) {
+  .some {
+    padding-top: 66px;
+    padding-bottom: 60px;
+    margin-top: -60px;
+  }
+}
 
 /* @media screen and (max-width:375px) {} */
