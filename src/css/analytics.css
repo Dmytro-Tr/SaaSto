@@ -11,6 +11,10 @@
   flex-wrap: wrap;
 }
 
+.analytics_picture_box {
+  margin-left: -60px;
+}
+
 .analytics_content {
   max-width: 568px;
 }
